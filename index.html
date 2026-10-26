@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GIF Gala | You're Invited!</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <main class="gala-container">
+    <header class="invitation-header">
+      <p class="event-label">✨ YOU'RE ON THE LIST... ALMOST!</p>
+
+      <h1>You are invited to the GIF Gala, where memes come to life.</h1>
+
+      <p class="event-date">
+        📅 Saturday, December 12, 2026
+      </p>
+    </header>
+
+    <section class="event-description">
+      <h2>It's giving legendary.</h2>
+
+      <p>
+        Get ready for a night of iconic reactions, viral moments,
+        and internet-famous outfits! Dress as your favorite GIF or
+        meme and bring your best energy. It's time to turn the
+        internet into a real-life party.
+      </p>
+    </section>
+
+    <section class="rsvp-section" aria-labelledby="rsvp-heading">
+      <h2 id="rsvp-heading">Save Your Spot 🎉</h2>
+
+      <form id="rsvp-form">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <fieldset class="form-group attendance-group">
+          <legend>Will you be joining us?</legend>
+
+          <label>
+            <input
+              type="radio"
+              name="attendance"
+              value="yes"
+              id="accept"
+              required
+            >
+            Yes! I'm ready to meme! 🎊
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="attendance"
+              id="decline"
+              value="no"
+              required
+            >
+            Sorry, I'll miss this one. 😢
+          </label>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">
+          Send My RSVP 🚀
+        </button>
+      </form>
+
+      <div
+        id="confirmation-message"
+        class="confirmation-message"
+        role="status"
+        aria-live="polite"
+      ></div>
+    </section>
+
+    <footer class="gala-footer">
+      <p>Come for the memes. Stay for the memories. 💖</p>
+    </footer>
+  </main>
+    <div class="confirmation-container hidden">
+
+    <!-- Cancellation icon -->
+    <button class="icon cancel" aria-label="Close confirmation message">
+      &times;
+    </button>
+
+    <!-- Confirmation message -->
+    <section class="confirmation-content--accepted hidden">
+      <p class="confirmation-message">
+        🎉 Thank you for accepting our invite!
+      </p>
+
+      <p class="confirmation-subtext">
+        Get ready for a night of iconic memes, legendary GIFs,
+        and unforgettable memories. See you at the GIF Gala!
+      </p>
+
+      <span class="celebration-emoji" aria-hidden="true">
+        😂 🎊 ✨
+      </span>
+    </section>
+    <section class="confirmation-content--declined hidden">
+      <p class="confirmation-subtext">
+        Ah, that's unfortunate. Looking forward to seeing you at our next gala.
+      </p>
+
+      <span class="celebration-emoji" aria-hidden="true">
+        💖 🎭 ✨
+      </span>
+    </section>
+
+  </div>
+</body>
+</html>
